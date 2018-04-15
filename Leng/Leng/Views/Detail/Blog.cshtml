@@ -1,0 +1,25 @@
+﻿@model Leng.Models.Entities.Blog
+
+
+<div id="post" class="panel panel-default">
+    <article>
+        <section>
+            <header>
+                <h1>@Model.Title</h1>
+                <section>
+                    <div>
+                        <span>作者：@Model.Author •@Model.DateCreated</span>
+                    </div>
+                </section>
+            </header>
+        </section>
+        <section>
+            @foreach (var p in Model.Paragraphs)
+            {
+                @Html.ParagraphTag(p)
+            }
+        </section>
+    </article>
+</div>
+
+

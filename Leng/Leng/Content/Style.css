@@ -1,0 +1,41 @@
+﻿
+#header {
+    min-height: 320px;
+    background-size: cover;
+    background-color: #4A7E93;
+}
+
+#nav1 {
+    position: relative;
+    height: 50px;
+    background-color: #4A7E93;
+}
+
+.a1 {
+    color: white;
+}
+
+#main {
+    padding-top: 35px;
+}
+
+body {
+    background-color: #f5f6f7;
+}
+
+.panel {
+    border-radius: 0px;
+}
+
+#title {
+    padding: 30px;
+}
+
+#post {
+    padding: 30px;
+}
+
+.nav-pills > li > a {
+    border-radius: 0px;
+    font-size: 20px;
+}

@@ -1,0 +1,22 @@
+﻿@using Leng.Models.Entities
+@model IEnumerable<Blog>
+
+
+
+
+@foreach (var b in Model)
+{
+    <article>
+        <div id="title" class="panel panel-default">
+            <div>
+                <h1 class="text-center">@Html.ActionLink(b.Title, "blog", "Detail", new { id = b.BlogId }, null)</h1>
+            </div>
+            <div class="text-center">
+                <span>作者：@b.Author • @b.DateCreated.ToShortDateString()</span>
+            </div>
+            <p>@b.Description</p>
+        </div>
+    </article>
+}
+
+
